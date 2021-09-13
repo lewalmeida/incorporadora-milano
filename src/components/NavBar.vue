@@ -2,7 +2,9 @@
   <section id="nav">
     <div class="content">
       <div class="logo">
-        <img src="../assets/images/MILANO.png" class="logo">
+        <a href="/">
+          <img src="../assets/images/MILANO.png" class="logo">
+        </a>
       </div>
       <div class="menu">
         <ul>
