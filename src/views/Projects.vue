@@ -114,7 +114,7 @@ export default {
 <style lang="scss">
 #projects {
   width: 100vw;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   padding-bottom: 150px;
 
   .content {
@@ -123,7 +123,6 @@ export default {
 
     @media (max-width: 1024px) {
       flex-wrap: wrap;
-      padding-bottom: 50px;
 
       .text {
         flex: 100% 0 !important;
@@ -142,7 +141,7 @@ export default {
 
     .text {
       flex: 30% 0;
-      padding:  10% 100px 100px 100px;
+      padding:  3vh 100px 30px   100px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -228,7 +227,7 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
-    width: 80%;
+    width: 89%;
     margin: auto;
 
     div {

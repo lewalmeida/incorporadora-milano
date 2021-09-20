@@ -27,7 +27,7 @@
 <style lang="scss" scoped>
 #homepage {
   width: 100vw;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 
   .content {
     display: flex;
@@ -70,7 +70,7 @@
 
     .text {
       flex: 50% 0;
-      padding: 20% 100px 100px 100px;
+      padding: 30vh 100px 100px 100px;
 
       h1 {
         font-style: normal;
@@ -103,7 +103,7 @@
 
     .image {
       flex: 50% 0;
-      height: calc(100vh - 60px);
+      min-height: calc(100vh - 60px);
       background-repeat: no-repeat;
       background-size: cover;
     }

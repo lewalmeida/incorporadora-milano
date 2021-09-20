@@ -8,6 +8,9 @@
           <p v-html="post.content && post.content.rendered"></p>
         </div>
       </div>
+      <div class="image">
+        <img src="../assets/images/image-about.jpeg">
+      </div>
     </div>
   </section>
 </template>
@@ -42,7 +45,7 @@ export default {
 <style lang="scss" scoped>
 #about {
   width: 100vw;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 
   .content {
     display: flex;
@@ -64,11 +67,15 @@ export default {
           }
         }
       }
+
+      .image {
+        flex: 100% 0 !important;
+      }
     }
 
     .text {
       flex: 50% 0;
-      padding: 10% 100px 100px 100px;
+      padding: 10vh 100px 100px 100px;
 
       h1 {
         font-style: normal;
@@ -93,6 +100,16 @@ export default {
         font-size: 12px;
         color: #fff;
         width: 400px;
+      }
+    }
+
+    .image {
+      flex: 50% 0;
+
+      img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
       }
     }
   }

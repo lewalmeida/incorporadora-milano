@@ -3,10 +3,12 @@
     <div class="content">
       <div class="text">
         <h1 v-html="post.title && post.title.rendered"></h1>
-        <p v-html="post.content && post.content.rendered"></p>
-        <div class="icons">
-          <a href=""><i class="fab fa-linkedin-in"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
+        <div>
+          <p v-html="post.content && post.content.rendered"></p>
+          <div class="icons">
+            <a href="https://www.instagram.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
 
@@ -56,10 +58,14 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 #contact {
   width: 100vw;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
+
+  a {
+    color: #fff!important;
+  }
 
   .content {
     display: flex;
@@ -86,7 +92,7 @@ export default {
 
     .text {
       flex: 30% 0;
-      padding: 5% 100px 100px 100px;
+      padding: 4% 100px 100px 100px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -112,9 +118,14 @@ export default {
 
       p {
         font-size: 12px;
-        color: #fff;
+        color: #fff!important;
         width: 400px;
-        margin-top: 300px;
+        margin-top: 80px;
+
+        a {
+          color: #fff!important;
+          text-decoration: none;
+        }
       }
 
       .icons {
@@ -130,7 +141,7 @@ export default {
     }
 
     .contact-form {
-      padding: 10% 100px 100px 100px;
+      padding: 6% 100px 100px 100px;
       .form {
         width: 100%;
 
